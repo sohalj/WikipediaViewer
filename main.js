@@ -7,8 +7,9 @@ $("#div1").empty();
   
   for(i = 0; i < 10; i++){
 
-    var d = document.createElement("div");
+    var d = document.createElement("button");
     d.setAttribute("class", "col-xs-12 textbox");
+    d.setAttribute("onClick", "window.open('https://en.wikipedia.org/wiki/" + r.query.pages[i].title + "')");
     var h = document.createElement("h1");
     var tittle = document.createTextNode(r.query.pages[i].title);
     h.appendChild(tittle);
