@@ -10,7 +10,8 @@ $("#div1").empty();
     var d = document.createElement("button");
     d.setAttribute("class", "col-xs-12 textbox");
     d.setAttribute("onClick", "window.open('https://en.wikipedia.org/wiki/" + r.query.pages[i].title + "')");
-    var h = document.createElement("h1");
+    var h = document.createElement("h2");
+    //h.setAttribute("class")
     var tittle = document.createTextNode(r.query.pages[i].title);
     h.appendChild(tittle);
     var p = document.createElement("p");

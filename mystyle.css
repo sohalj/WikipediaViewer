@@ -1,5 +1,105 @@
 .textbox{
-	    border: 1px solid #ddd;
+	border: 5px solid white;
     border-radius: 4px;
-    padding: 5px;
+    padding: 20px;
+    background-color: #7DA8A6;
+    margin: 15px;
+    color: black;
+    text-align: left
+	
 }
+
+button:hover{
+	border: 5px solid black;
+    border-radius: 4px;
+    padding: 20px;
+    background-color: #7DA8A6;
+    margin: 15px;
+    color: black;
+    text-align: left
+	
+}
+input::-webkit-input-placeholder {
+	color: white !important;  /*read up on using this*/
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input-webkit-autofill:focus {
+	border-color:white;
+	background-color: #7DA8A6;
+}
+
+
+
+.title{
+	color: white;
+
+}
+
+.btn{
+	border: 3px solid white;
+	background-color: #0E5653;
+}
+
+.btn: input:active{
+	outline: none;
+}
+
+.btn:hover{
+	border: 3px solid black;
+	background-color: #0E5653;
+	color:white;
+}
+
+
+
+
+.abc{
+	border: 3px solid white;
+	color:white;
+	background-color: #0E5653;
+}
+body{
+	background-color: #0E5653;
+
+}
+
+p{
+	margin-bottom: -10px;
+}
+
+h2{
+	position: relative;
+	top: -20px;
+}
+
+
+
+form{
+	position: relative;
+	color: black;
+	left: 50px;
+	border-color: black;
+	color: white;
+}
+
+a{
+	position: relative;
+	left: 490px;
+	color: white;
+}
+
+a:hover{
+	position: relative;
+	left: 490px;
+	color: black;
+}
+
+
+
+
+footer{
+	color: white;
+}
+
