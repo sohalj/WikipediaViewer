@@ -1,15 +1,15 @@
-.textbox{
+.textbox{  /*Textbox*/
 	border: 5px solid white;
     border-radius: 4px;
     padding: 20px;
     background-color: #7DA8A6;
     margin: 15px;
-    color: black;
+    color: #00100F;
     text-align: left
 	
 }
 
-button:hover{
+.textbox:hover{ /*Textbox hover*/
 	border: 5px solid black;
     border-radius: 4px;
     padding: 20px;
@@ -19,32 +19,12 @@ button:hover{
     text-align: left
 	
 }
-input::-webkit-input-placeholder {
-	color: white !important;  /*read up on using this*/
-}
 
-input:-webkit-autofill,
-input:-webkit-autofill:hover, 
-input-webkit-autofill:focus {
-	border-color:white;
-	background-color: #7DA8A6;
-}
-
-
-
-.title{
-	color: white;
-
-}
-
-.btn{
+.btn{ /*Submit button*/
 	border: 3px solid white;
 	background-color: #0E5653;
 }
 
-.btn: input:active{
-	outline: none;
-}
 
 .btn:hover{
 	border: 3px solid black;
@@ -52,17 +32,22 @@ input-webkit-autofill:focus {
 	color:white;
 }
 
-
-
-
-.abc{
+.searchbox{ /*Search Box*/
 	border: 3px solid white;
 	color:white;
 	background-color: #0E5653;
 }
+
+input::-webkit-input-placeholder { /*Place holder color*/
+	color: white !important;  
+}
+
+h1{
+	color: white;
+}
+
 body{
 	background-color: #0E5653;
-
 }
 
 p{
@@ -73,8 +58,6 @@ h2{
 	position: relative;
 	top: -20px;
 }
-
-
 
 form{
 	position: relative;
@@ -88,6 +71,7 @@ a{
 	position: relative;
 	left: 490px;
 	color: white;
+
 }
 
 a:hover{
@@ -95,9 +79,6 @@ a:hover{
 	left: 490px;
 	color: black;
 }
-
-
-
 
 footer{
 	color: white;
