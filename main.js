@@ -7,7 +7,7 @@ Post:Creates a button which is the textbox where the search information is displ
      Textbox appended to div1 in html file.
 */
 function display(r){
-  $("#div1").empty();
+  $("#results").empty();
     for(i = 0; i < 10; i++){
       var d = document.createElement("button");
       d.setAttribute("class", "col-xs-12 textbox");
@@ -20,7 +20,7 @@ function display(r){
       p.appendChild(s);
       d.appendChild(h);
       d.appendChild(p);
-      var box = document.getElementById("div1");
+      var box = document.getElementById("results");
       box.appendChild(d);
     }
 }
@@ -33,7 +33,7 @@ Post: Runs a API get call which returns the API values from wikipedia.
       Passes the API information  to the display function.
 */
 function search(){
-  var q = document.getElementById("query").value  
+  var q = document.getElementById("query").value;  
   if(q != ""){
     var xhr = new XMLHttpRequest();
     xhr.onreadystatechange = function (){
@@ -43,11 +43,14 @@ function search(){
         display(r);
       }
       else{
-        ///include error handling  if no return 
+        console.log("Error", xmlhttp.statusText)  
       }
     };   
     xhr.open("GET", "https://en.wikipedia.org/w/api.php?action=query&origin=*&format=json&formatversion=2&prop=info|extracts&generator=search&exsentences=1&exintro=1&explaintext=1&gsrsearch=" + q + "&gsrnamespace=0&gsrlimit=10&exlimit=10" , true);
     xhr.send();
+  }
+  else{
+    alert("please enter a search value");
   } 
 }
 

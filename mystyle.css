@@ -3,21 +3,13 @@
     border-radius: 4px;
     padding: 20px;
     background-color: #7DA8A6;
-    margin: 15px;
+    margin-top: 15px;
     color: #00100F;
     text-align: left
-	
 }
 
 .textbox:hover{ /*Textbox hover*/
 	border: 5px solid black;
-    border-radius: 4px;
-    padding: 20px;
-    background-color: #7DA8A6;
-    margin: 15px;
-    color: black;
-    text-align: left
-	
 }
 
 .btn{ /*Submit button*/
@@ -25,10 +17,8 @@
 	background-color: #0E5653;
 }
 
-
 .btn:hover{
 	border: 3px solid black;
-	background-color: #0E5653;
 	color:white;
 }
 
@@ -36,13 +26,14 @@
 	border: 3px solid white;
 	color:white;
 	background-color: #0E5653;
+	margin-right: 10px;
 }
 
 input::-webkit-input-placeholder { /*Place holder color*/
 	color: white !important;  
 }
 
-h1{
+h1 {
 	color: white;
 }
 
@@ -51,7 +42,7 @@ body{
 }
 
 p{
-	margin-bottom: -10px;
+	margin-bottom: -10px;  /*change these to fit small boxes*/
 }
 
 h2{
@@ -60,27 +51,48 @@ h2{
 }
 
 form{
-	position: relative;
-	color: black;
-	left: 50px;
 	border-color: black;
 	color: white;
 }
 
 a{
-	position: relative;
-	left: 490px;
+	text-align: center;
 	color: white;
-
 }
 
 a:hover{
-	position: relative;
-	left: 490px;
 	color: black;
+}
+
+@media screen and (max-width: 310px){
+    h1{
+        font-size: 28px;
+    }
+
+    h2{
+    	font-size: 20px;
+    }
+
+    .btn{
+    	margin-top: 15px;
+    }
+}
+
+
+.container{  /*Used flex and html and body css used to keep footer on bottom*/
+	flex:1;
+}
+
+html{
+	height: 99%;
+}
+
+body{
+	display: flex;
+  	flex-direction: column;
+  	min-height: 100%;
 }
 
 footer{
 	color: white;
 }
-

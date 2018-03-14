@@ -14,15 +14,18 @@
   <div class="container">
     <div class="row">
       <div class="col-xs-12">
-        <h1 class="text-center">Wikipedia Viewer</h1>
-        <form  class="col-md-4 col-md-offset-4" name="searchForm" onsubmit="search();return false" autocomplete="off">   <!-- return false makes it so page does not reload again-->
-          <input class="searchbox" type="text" id="query" placeholder="Search for...">
-          <input class="btn" type="submit" value="Submit">
-        </form>
-      </div>
-      <a  href="https://en.wikipedia.org/wiki/Special:Random" target='_blank'>Click Here For A Random Page</a>
-    </div>
-    <div id="div1">
+          <h1 class="text-center">Wikipedia Viewer</h1>
+          <form class="text-center" name="searchForm" onsubmit="search();return false" autocomplete="off">
+            <input class="searchbox" type="text" id="query" placeholder="Search for...">
+            <input class="btn" type="submit" value="Submit">
+          </form>
+          <div class="text-center">
+            <a href="https://en.wikipedia.org/wiki/Special:Random" target='_blank'>Click Here For A Random Page</a>
+          </div>
+          <div id="results">
+            <!--search results created in js-->
+          </div>  
+      </div>  
     </div>
   </div>
 <footer>
@@ -30,4 +33,3 @@
 </footer>
 </body>
 </html>
-
